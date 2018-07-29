@@ -1,0 +1,35 @@
+.znnew{
+	margin-top: 55px;
+	margin-left: 48px;
+	margin-bottom: 50px;
+	font-size: 29px;
+	color: #756b76;
+}
+.xs{
+	font-size: 11px;
+}
+.xiaoxi{
+	cursor: pointer;
+	margin-left: 68px;
+	color: #f9995c;
+	float: left;
+	font-size: 14px;
+}
+.huishou{
+	cursor: pointer;
+	float: left;
+	font-size: 14px;
+}
+.bigss2{
+	float: left;
+	margin: 0 15px;
+}
+.xia1{
+	text-align: center;
+	line-height: 80px;
+}
+.xian2{
+	display: none;
+	text-align: center;
+	line-height: 80px;
+}

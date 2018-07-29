@@ -1,0 +1,126 @@
+body{
+	background: white;
+}
+.clasmain{
+	width: 1201px;
+	height: 527px;
+	margin: 0 auto;
+	background: url(../images/login/da.gif);
+}
+.wabsed{
+	float: left;
+	width: 100%;
+}
+.inde{
+	width: 400px;
+	height: 440px;
+	float: left;
+	border: 1px solid #d9d9d9;
+	margin-left: 600px;
+	margin-top: 50px;
+	box-shadow:0 2px 4px 1px #d9d9d9;
+	position: relative;
+}
+.vpl{
+	float: left;
+	width: 400px;
+	color: #616264;
+	font-size: 16px;
+	margin-left: 31px;
+	margin-top: 17px;
+}
+.ss{
+	width: 250px;
+	height: 44px;
+	border: 1px solid #dddddd;
+	border-radius: 5px;
+	margin: 10px 0 10px 20px;
+	font-weight: bold;
+	font-size: 14px;
+	padding-left: 91px;
+}
+.dw1{
+	color: #666;
+	font-size: 14px;
+	font-weight: bolder;
+	position: absolute;
+	top: 81px;
+	left: 40px;
+}
+.dw2{
+	color: #666;
+	font-size: 14px;
+	font-weight: bolder;
+	position: absolute;
+	top: 148px;
+	left: 40px;
+}
+.dw3{
+	color: #666;
+	font-size: 14px;
+	font-weight: bolder;
+	position: absolute;
+	top: 213px;
+	left: 40px;
+}
+.dw4{
+	color: #666;
+	font-size: 14px;
+	font-weight: bolder;
+	position: absolute;
+	top: 202px;
+	left: 262px;
+}
+.bigbb{
+	width: 300px;
+	height: 34px;
+	border: none;
+	background: #44b541;
+	color: white;
+	margin-left: 50px;
+	margin-top: 35px;
+	cursor: pointer;
+}
+#wpass{
+	float: left;
+	margin-top: 26px;
+	margin-left: 20px;
+	color: #337ab7;
+}
+.leckl{
+	float: left;
+	color: #ababab;
+	margin-top: 5px;
+	margin-left: 138px;
+}
+.btns{
+	cursor: pointer;
+	border: 1px solid #dedede;
+	background: white;
+	color: #71a672;
+	cursor: pointer;
+}
+.colla{
+	margin-top: 5px;
+	float: left;
+	width: 400px;
+	text-align: center;
+}
+.collas1{
+	color: #717171;
+}
+.collas1 > span{
+	color: #cbcbcb;
+}
+.imgse{
+	margin-top: 10px;
+	float: left;
+	width: 400px;
+}
+.imgse > img{
+	float: left;
+	margin: 0 6px;
+}
+#canclick{
+	cursor: pointer;
+}

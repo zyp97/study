@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>对象属性也可以遍历</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <li v-for="(value,key,index) in user">
+            {{index}}-{{key}}:{{value}}
+        </li>
+    </ul>
+    <span v-for="n in 10">{{n}}</span>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            user:{
+                name:"张棚",
+                gender:"男",
+                age:22
+            }
+        }
+    })
+</script>
+</html>

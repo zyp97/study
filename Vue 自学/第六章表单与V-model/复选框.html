@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>复选框的用法组合</title>
+</head>
+<body>
+<div id="app">
+  <input type="checkbox"v-model="ches"value="html"id="html">
+    <label for="html">HTML</label>
+    <input type="checkbox"value="css"v-model="ches"id="css">
+    <label for="css">CSS</label>
+    <input type="checkbox"v-model="ches"value="js"id="js">
+    <label for="js">Js</label>
+    <p>你选择的是:{{ches}}</p>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            ches:''
+        }
+    })
+</script>
+</html>

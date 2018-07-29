@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-for可以写在内置标签上template</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <template v-for="book in books">
+            <li>书名:{{book.name}}</li>
+            <li>作者:{{book.author}}</li>
+        </template>
+    </ul>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            books:[
+                {
+                    name:"《vue.js实战》",
+                    author:"张棚"
+                },
+                {
+                    name:"《vue.js实战》",
+                    author:"张棚"
+                }
+            ]
+        }
+    })
+</script>
+</html>

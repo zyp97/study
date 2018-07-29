@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            width:100px;
+            height:40px;
+            border:1px solid lightgrey;
+            text-decoration: none;
+        }
+        a{
+            display: block;
+            text-decoration: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">
+    <a href="#"id="k">发送验证码</a>
+</div>
+<select id="city">
+
+</select>
+<script src="../jquery-3.2.1.js"></script>
+</body>
+<script>
+  var time=10;
+  var a;
+  function fn() {
+      time=--time;
+      $("#k").html(time+"秒");
+      if(time==0) {
+          $("#k").html("重新发送");
+          clearInterval(a);
+      }
+  }
+  $("#k").click(function () {
+      clearInterval(a);
+      a= setInterval("fn()",1000);
+
+  });
+    $.ajax({
+        "url":"../AJAX/ajaxdata.html",
+        "type":"GET",
+        "data":"",
+        "dataType":"json",
+        "beforeSend":function () {
+            // alert("请稍后....")
+        },
+        "success":function (JSON) {
+            callback(JSON)
+        },
+        "error":function () {
+            alert("AJAX请求失败");
+        }
+    });
+  function callback(json) {
+      $.each(json,function (i) {
+          $("#city").append("<option>"+json[i].one.tag_name+"</option>")
+      })
+  }
+</script>
+</html>

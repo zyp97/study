@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my>
+        <template scope="props">
+            <p>来自父组件的内容</p>
+            <p>{{props.ms g}}</p>
+        </template>
+    </my>
+</div>
+<script src="js/vue.js "></script>
+</body>
+<script>
+    Vue.component('my',{
+        template:'<div class="container">' +
+        '<slot msg="来自子组件的内容"></slot>' +
+        '</div>'
+    });
+    var app =new Vue({
+        el:"#app"
+    })
+</script>
+</html>

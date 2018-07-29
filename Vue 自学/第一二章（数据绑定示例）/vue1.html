@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    {{content}}
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    //实例化对象
+  var app=new Vue({
+        el:"#app",//el就是需要获取的元素，一定是html里的根容器元素（比如上面app）；
+        data:{    //data用于数据的存储，
+            content:'Hello World'
+        }
+    });
+    setTimeout(function () {
+        app.$data.content='bye World'
+    },2000)
+
+</script>
+</html>

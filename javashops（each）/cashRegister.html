@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>收款台</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/cashRegister.css">
+</head>
+<body>
+<!-- 公共頂部 -->
+<div id='pHead'>
+    <div id='headerLine'>
+        <div class="headerMid">
+            <div class="headLeft">
+                <div class='hlwelcome'><a href="#">您好，欢迎来来到本站！</a></div>
+                <ul class="hlLogin">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+
+            </div>
+            <ul class="headRight">
+                <li><a href="#">站内消息（0）</a></li>
+                <li><a href="#">购物车（0）件</a></li>
+                <li><a href="#">帮助中心</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="cashier-title">
+        <img src="./img/logo.gif" title="logo">	<h1>收银台</h1>
+        <div class="cashier-img">
+            <img src="./img/jstj.jpg">		<h2>订单提交成功，请您尽快付款</h2>
+        </div>
+    </div>
+</div>
+<div style="clear:both;"></div>
+<!-- 主要内容写在这里 -->
+<div class="cashier-box">
+    <div class="cashier-change">
+        <h2>订单号：<b>152972180925</b></h2>
+        <h2>应付金额：<span>￥209.00</span><i>元</i></h2>
+        <div class="cashier-order-detail" id="deploy">
+            <div class="cashier-order-inside">
+                <h3><i></i>送货至：<span>123321</span><span>北京-海淀区-三环以内<span>123</span><span>15555555555</span><b rel="close">展开+</b></span></h3>
+                <div class="cashier-order-cartlist">
+                    <p>发票信息：此订单没有索取发票 </p>
+                    <p>送货时间：任意时间</p>
+                    <p>订单备注：</p>
+                </div>
+            </div>
+        </div>
+        <!-- 支付切换 -->
+        <div class="cashier-tools">
+            <div class="cashier-tools-inside">
+                <div class="cashier-tools-title">
+                    <h3>支付平台</h3>
+                </div>
+                <ul class="cashier-pay-list">
+                    <li class="alipay" rel="alipay" payid="1" pluginid="alipayDirectPlugin">
+                        <img src="./img/zhifubao.png">
+                        <span></span>
+                    </li>
+                    <li class="bank" rel="bank" payid="2" pluginid="billPlugin">
+                        <img src="./img/kuaiqian.png" width="150"><span></span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--支付方式-->
+        <div class="cashier-pay" style="border: 1px solid rgb(225, 225, 225);">
+            <div class="same-pay-way alipay-pay" style="display: none;">
+                <div class="alipay-left">
+                    <p>使用电脑支付</p>
+                    <div class="pc-pay-img">
+                    </div>
+                    <a href="javascript:void(0);">立即支付</a>
+                    <i></i>
+                </div>
+                <div class="alipay-right">
+                    <p>使用支付宝钱包扫一扫即可付款</p>
+                    <div class="pay-erweima">
+                        <iframe class="alipay_qrcode" src="/b2c/api/shop/payment/alipay-qrcode.do?orderId=6&amp;mtype=2" frameborder="no" style=""></iframe>
+                        <!--<img src="./付款跳转_files/loading.jpg" class="pay-wait" style="display: none;">-->
+                    </div>
+                </div>
+                <div class="pay-bottom-border"></div>
+            </div>
+        </div>
+        <div class="same-pay-way bank-pay paybtn">
+            <ul>
+                <li>
+                    <a href="javascript:void(0);" id="yes1">立即支付</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--结束-->
+
+
+<!-- 公共底部 -->
+<div id='pFoot'>
+    <div class="bodyMids">
+        <div class="pfBody">
+            <div class="pfbTexts">
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>新手上路</li>
+                        <li><a href="#">顾客必读</a></li>
+                        <li><a href="#">会员等级折扣</a></li>
+                        <li><a href="#">积分规则</a></li>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>关于网站</li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">业务合作</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>购物指南</li>
+                        <li><a href="#">游客购物通道</a></li>
+                        <li><a href="#">网站使用条款</a></li>
+                        <li><a href="#">购物流程</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>物流和配送</li>
+                        <li><a href="#">配送范围</a></li>
+                        <li><a href="#">配送方式</a></li>
+                        <li><a href="#">关于收货和验货</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>支付方式</li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">付款常见问题</a></li>
+                        <li><a href="#">索取发票</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>服务</li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">免责条款</a></li>
+                        <li><a href="#">商品退换货保障</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pfbEWM">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+
+    })
+</script>
+<script type="text/javascript" src="js/cashRegister.js"></script>
+<script type="text/javascript"></script>
+
+</body>
+</html>

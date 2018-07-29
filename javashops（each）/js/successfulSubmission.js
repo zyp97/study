@@ -1,0 +1,19 @@
+/**
+ * Created by Administrator on 2018/6/29.
+ */
+$(document).ready(function(){
+   //单击收起
+    $("#up1").click(function(){
+        if($(this).attr("name")==0){
+            $(this).attr("name","1");
+            $(this).text("展开");
+            $(this).parent().prev().slideDown("slow");
+            $("#up2").slideUp("slow");
+        }else{
+            $(this).attr("name","0");
+            $(this).text("收起");
+            $(this).parent().prev().slideUp("slow");
+            $("#up2").slideDown("slow");
+        }
+    })
+});

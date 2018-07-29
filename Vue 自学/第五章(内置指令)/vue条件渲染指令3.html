@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-show和v-if</title>
+</head>
+<body>
+<div id="app">
+    <p v-show="status===1">当statue等于1显示该行</p>
+</div>
+
+<script src="js/vue.js"></script>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            status:1
+        }
+    })
+</script>
+</html>

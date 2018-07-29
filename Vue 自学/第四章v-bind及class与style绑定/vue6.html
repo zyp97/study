@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数组语法</title>
+</head>
+<body>
+<div id="app">
+    <div :class="[a,b]"></div>
+    <div :style="sty">文本</div>
+</div>
+<scrip9t src="js/vue.js"></scrip9t>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            a:"active",
+            b:"error",
+          sty:{
+                color:'red',
+                fontSize:34+"px"
+            }
+        }
+
+    })
+</script>
+</body>
+</html>

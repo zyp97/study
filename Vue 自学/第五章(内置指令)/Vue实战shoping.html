@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <style>
+        [v-cloak]{
+            display: none;
+        }
+        table{
+            border: 1px solid black;
+            border-collapse: collapse;
+            border-spacing: 0;
+            empty-cells: show;
+        }
+        th,td{
+            padding: 8px 16px;
+            border:1px solid black;
+            text-align: center;
+        }
+        th{
+            background: grey;
+        }
+    </style>
+</head>
+<body>
+<div id="app"v-cloak style="margin-left: 500px;">
+    <template v-if="list.length">
+        <table>
+            <thead>
+            <tr>
+                <th><input type="checkbox"v-on:click="checka"v-model="checked"></th>
+                <th>商品名称</th>
+                <th>商品单价</th>
+                <th>商品数量</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(item,index) in list">
+                <td><input type="checkbox"v-model="selectList" :id="item.id" :value="index"name="selectList"></td>
+                <td>{{item.name}}</td>
+                <td>{{item.price}}</td>
+
+                <td>
+                    <button v-on:click="handleReduce(index)" :disable="item.count===1">-</button>
+                    {{item.count}}
+                    <button v-on:click="handleAdd(index)">+</button>
+                </td>
+                <td><button v-on:click="hand(index)">移除</button></td>
+            </tr>
+
+            </tbody>
+        </table>
+        <div>总价:￥{{totalPrice}}</div>
+        <div @click="mo">全不选</div>
+    </template>
+    <div v-else>购物车为空</div>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            list:[
+                {
+                    id:1,
+                    name:'iPhone 7',
+                    price:2000,
+                    count:1
+                },
+                {
+                    id:2,
+                    name:'iPor Pro',
+                    price:5000,
+                    count:1
+                },
+                {
+                    id:3,
+                    name:'MacBook Pro',
+                    price:5000,
+                    count:1
+                }
+            ],
+            list1:[
+                {
+                    id:4,
+                    name:'iPhone 7',
+                    price:2000,
+                    count:1
+                },
+                {
+                    id:5,
+                    name:'iPor Pro',
+                    price:5000,
+                    count:1
+                },
+                {
+                    id:6,
+                    name:'MacBook Pro',
+                    price:5000,
+                    count:1
+                }
+            ],
+            selectList:[],
+            checked:false,
+
+        },
+        computed:{
+            totalPrice:function () {
+              var total=0;
+              for(var i=0,len=this.selectList.length;i<len;i++){
+                  var index=this.selectList[i];
+                  var item=this.list[index];
+                  if(item){
+                      total+=item.price*item.count;
+                  }
+                  else {
+                      continue;
+                  }
+                }
+              return total.toString().replace(/\B(?=(\d{3})+$)/g,',')
+            }
+        },
+        methods:{
+            handleReduce:function(index){
+                var item=this.list[index];
+                if(item.count<2){
+                    return;
+                }
+                item.count--;
+            },
+            handleAdd:function (index) {
+                   var item=this.list[index];
+                   item.count++;
+            },
+            hand:function (index) {
+                this.list.splice(index, 1);
+            },
+            swapCheck:function () {
+                var selectList=document.getElementsByTagName('selectList');
+                var len=selectList.length;
+                if(this.checked){
+                    for(var i=0;i<len;i++){
+                        var item=selectList[i];
+                        item.checked=false;
+                    }
+                    this.checked=false;
+                    this.selectList=[];
+                }
+                else {
+                    for(i=0;i<len;i++){
+                        item=selectList[i];
+                        if(item.checked===false){
+                            item.checked=true;
+                            this.selectList.push(selectList[i].value);
+                        }
+                    }
+                    this.checked=true;
+                }
+            },
+            checka:function () {
+                var a = document.getElementsByTagName("input");
+                for (var i = 0; i < a.length; i++) {
+                        a[i].checked = true;
+                }
+
+            },
+            mo:function () {
+                var a = document.getElementsByTagName("input");
+                for (var i = 0; i < a.length; i++) {
+                    a[i].checked = false;
+                }
+            }
+        }
+    });
+
+</script>
+</html>

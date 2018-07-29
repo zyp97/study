@@ -1,0 +1,284 @@
+.li-ckt-info, .address-li-ckt-info, .center-ckt-info, .detail-item-discount, .content-item-coupon, .bill_btn {
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -ms-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+}
+.aliases-li-ckt-info, .li-ckt-pay, .more-collapse-ckt, .ckt-checkbox, .item-discount-inventory {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.name-li-ckt-info, .address-li-ckt-info, .mobile-li-ckt-info, .operate-li-ckt-info {
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+}
+.btn-div input, .btn-div a {
+    border: 0 none;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-weight: normal;
+    font: 14px/35px "Helvetica Neue",Helvetica,Arial,"Microsoft Yahei","Hiragino Sans GB","Heiti SC","WenQuanYi Micro Hei",sans-serif;
+    margin-left: 10px;
+    overflow: hidden;
+    padding: 0;
+    text-align: center;
+    transition: all 0.4s ease 0s;
+    height: 38px;
+    line-height: 38px;
+}
+button, html input[type=button], input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+/*订单信息流程信息*/
+.flow-steps {
+    float: right;
+    height: 3px;
+    margin: 53px 40px 0 0;
+    width: 615px;
+}
+
+.flow-steps ol {
+    margin: 0 auto;
+    list-style: none;
+}
+
+.flow-steps ol li {
+    float: left;
+    height: 3px;
+    position: relative;
+    list-style: outside none none;
+}
+
+.flow-steps ol li span {
+    bottom: -35px;
+    color: #999;
+    display: block;
+    height: 16px;
+    left: -16px;
+    position: absolute;
+    width: 100px;
+}
+
+.flow-steps ol li em {
+    background: #dedede none repeat scroll 0 0;
+    border: 3px solid #fff;
+    border-radius: 13px;
+    color: #666;
+    height: 18px;
+    left: 0;
+    line-height: 18px;
+    position: absolute;
+    text-align: center;
+    top: -11px;
+    width: 18px;
+    font-style: normal;
+}
+
+.flow-steps ol .num1 {
+    background: #ff6700;
+    width: 163px;
+}
+
+.flow-steps ol .num1 span {
+    color: #ff6700;
+}
+
+.flow-steps ol .num1 em {
+    background: #ff6700 none repeat scroll 0 0;
+    color: #fff;
+}
+
+.flow-steps ol .num2 {
+    background: #dedede;
+    width: 290px;
+}
+
+.flow-steps ol .num2 span {
+    left: 108px;
+    color: #999;
+}
+
+.flow-steps ol .num2 em {
+    background: #dedede none repeat scroll 0 0;
+    color: #666;
+    left: 128px;
+}
+
+.flow-steps ol .num3 {
+    background: #dedede;
+    width: 162px;
+}
+
+.flow-steps ol .num3 span {
+    left: 130px;
+}
+
+.flow-steps ol .num3 em {
+    left: 150px;
+}
+
+.clear {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+}
+/*中间部分*/
+.section1{
+    background-color: #fff;
+}
+/*<!--购物车-->*/
+.mycar-index{
+    margin: 0 auto;
+    width: 1200px;
+}
+.mycar-index h1 {
+    color: #333;
+    font-size: 22px;
+    height: 55px;
+    line-height: 55px;
+    position: relative;
+    font-weight: normal;
+    width: 1200px;
+    display: block;
+    clear: both;
+}
+#cart-wrapper {
+    width: 1200px;
+    overflow: hidden;
+}
+#cart-wrapper table {
+    width: 1200px;
+    border: 1px solid #f5f5f5;
+    border-bottom: 0px none;
+}
+#cart-wrapper table tr th {
+    background: #f5f5f5 none repeat scroll 0 0;
+    height: 50px;
+    text-align: center;
+}
+#cart-wrapper table tr td {
+    border-bottom: 1px solid #f5f5f5;
+    color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+#cart-wrapper table tr td .cart_list_img {
+    float: left;
+    margin: 0px 0px 0px 30px;
+    display: block;
+}
+#cart-wrapper table tr td img {
+    width: 50px;
+    height: 50px;
+}
+#cart-wrapper table tr td p {
+    width: 540px;
+    overflow: hidden;
+    height: 50px;
+    float: left;
+    line-height: 50px;
+    text-align: left;
+}
+#cart-wrapper table tr td p a {
+    display: block;
+    font-size: 14px;
+    line-height: 50px;
+    margin-left: 15px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 540px;
+    overflow: hidden;
+    text-align: left;
+    color:#337ab7;
+}
+.Numinput {
+    display: inline-block;
+}
+.Numinput span {
+    float: left;
+    height: 22px;
+    width: 23px;
+    line-height: 22px;
+    text-align: center;
+    cursor: pointer;
+}
+.Numinput input {
+    float: left;
+    display: inline;
+    height: 22px;
+    line-height: 22px;
+    border: 1px solid #e3e2e2;
+    text-align: center;
+}
+.cart_last .delete {
+    background: url(../images/mycar_icon05.png) no-repeat center center;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    display: inline-block;
+}
+/*<!-- 总价 -->*/
+.cart-wrapper {
+    width: 1200px;
+    text-align: right;
+    padding-top: 30px;
+}
+.cart-wrapper span {
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: right;
+    width: 550px;
+}
+.cart_tools {
+    width: 1200px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.cart_tools .btn-div input {
+    float: right;
+}
+.btn-div .white-btn {
+    margin-left: 12px;
+    width: 180px;
+    background: #fff;
+    color: #757575;
+    border: 1px solid #b0b0b0;
+}
+.btn-div .white-btn:hover {
+    background: #757575;
+    border-color: #757575;
+    color: #fff;
+}
+.btn-div .yellow-btn {
+    margin-left: 12px;
+    width: 180px;
+    background: #33a600;
+    border: 1px solid #33a600;
+    color: #fff;
+}
+.btn-div .yellow-btn:hover {
+    background: #399510;
+    border-color: #399510;
+}
+.btn-div .green-btn {
+    margin-left: 12px;
+    width: 180px;
+    background: #ff6700;
+    border: 1px solid #ff6700;
+    color: #fff;
+}
+.btn-div .green-btn:hover {
+    background: #f25807;
+    border-color: #f25807;
+}

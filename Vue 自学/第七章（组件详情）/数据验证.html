@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my></my>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    Vue.component('my',{
+        props:{
+            propA:Number,//必须是数子内型
+            propB:[string,Number],//必须是字符串和数字
+            propC:{
+                type:Boolean,
+                default:true
+            },
+            propD:{
+                type:Number,
+                required:true//数字是必传
+            },
+            propE:{
+                type:Array,
+                default:function () {
+                    return[];//如果是数组对象，默认值必须是一个函数啦返回
+                }
+            },
+            propF:{
+                validator:function (value) {
+                    return value>10;//自定义一个验证函数
+                }
+            }
+        }
+    })
+</script>
+</html>

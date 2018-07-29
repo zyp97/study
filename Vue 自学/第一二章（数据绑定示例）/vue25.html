@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过渡和动画</title>
+    <script src="js/vue.js"></script>
+    <style>
+
+        .fade-enter-active{
+            transform-origin: left center;
+            animation: bounce-in 1s;
+        }
+        .fade-leave-active{
+            transform-origin: left center;
+            animation: bounce-in 1s reverse;
+        }
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <transition name="fade">
+        <div v-show="show">HelloWorld</div>
+    </transition>
+    <button @click="handleClick">切换</button>
+</div>
+<script>
+    var vm =new Vue({
+        el:"#app",
+        data:{
+            show:true
+        },
+        methods:{
+            handleClick:function () {
+                this.show=!this.show
+            }
+        }
+
+
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,968 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>商城首页</title>
+  <link rel="stylesheet" type="text/css" href="css/public.css">
+  <link rel="stylesheet" type="text/css" href="css/swiper-4.3.3.min.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+  <style>
+    #call{
+      width:400px;
+      height:200px;
+      background: red;
+      position: absolute;
+      top:210px;
+      left:350px;
+      display: none;
+      z-index: 9;
+    }
+  </style>
+</head>
+<body>
+  <!-- 公共頂部 -->
+  <div id='pHead'>
+    <div id='headerLine'>
+      <div class="headerMid">
+        <div class="headLeft">
+          <div class='hlwelcome'><a href="#">您好，欢迎来来到本站！</a></div>
+          <ul class="hlLogin">
+            <li><a href="#">登录</a></li>
+            <li><a href="#">注册</a></li>
+          </ul>
+          
+        </div>
+        <ul class="headRight">
+          <li><a href="#">站内消息（0）</a></li>
+          <li><a href="#">购物车（0）件</a></li>
+          <li><a href="#">帮助中心</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="header">
+      <div class="headerMid">
+        <div class="headMain">
+          <div id="logo">
+            <a href="#"><img src="images/public/logo.gif" height='76' /></a>
+          </div>
+          <div class="headSearch">
+            <div class="hsTop">
+              <input id='mainSearch' type="text" name="search" placeholder='请输入产品关键字，如品牌、型号等' />
+              <span id='msearchDo'>搜索</span>
+            </div>
+            <div class="hsBot">
+              <div class='hsbTit'>热门搜索</div>
+              <ul class='hsbList'>
+                <li><a href="#">女装</a></li>
+                <li><a href="#">香水</a></li>
+                <li><a href="#">炖锅</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="headSome">
+            <img src="images/public/bbd.png" width='338' />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="headList">
+      <div class="headerMid">
+        <div id='headChoose'>
+          <div class="hcTitle">所有商品分类</div>
+          <div class="hcBody">
+         <!--<div class="hcbMess">
+              <div class="hcbMBody">
+                <div class="hcbmbText">
+                  <div class="hcbmbtTit">
+
+                  </div>
+
+
+                  <div class="hcbmbtBody str">
+
+                  </div>
+                </div>
+
+                <div class="hcbmbPic"></div>
+              </div> -->
+
+              <div class='hcbmElse'>
+
+                <div class="hcbmeLine">
+                  <div class="hcbmelType">
+
+                  </div>
+                  <ul class="hcbmelList str">
+
+                  </ul>
+                </div>
+
+                <div class="hcbmeLine">
+                  <div class="hcbmelType">
+
+                  </div>
+                  <ul class="hcbmelList str">
+
+                  </ul>
+                </div>
+
+                <div class="hcbmeLine">
+                  <div class="hcbmelType">
+
+                  </div>
+                  <ul class="hcbmelList str">
+
+                  </ul>
+                </div>
+
+                <div class="hcbmeLine">
+                  <div class="hcbmelType">
+
+                  </div>
+                  <ul class="hcbmelList str">
+
+                  </ul>
+                </div>
+               
+              </div>
+            </div>
+
+
+          </div>
+
+        </div>
+      <div id="call"></div>
+        <ul class='headTypeList'>
+          <li><a href="#">首页</a></li>
+          <li><a href="#">零食天地</a></li>
+          <li><a href="#">进口食品</a></li>
+          <li><a href="#">个人护理</a></li>
+          <li><a href="#">箱包钟表</a></li>
+          <li><a href="#">专题</a></li>
+        </ul>
+      </div>
+    </div>
+
+  <div class="swiper-container">
+    <!-- 轮播 -->
+    <div class="swiper-wrapper">
+        <div class="swiper-slide swiper_banner1"></div>
+        <div class="swiper-slide swiper_banner2"></div>
+    </div>
+    <!-- 左右切换按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <!-- 类型选择 -->
+  <div class='bodyMain'>
+    <div class="bodyMids">
+      
+      <div class="indType">
+        <div class="itHead">食品饮料</div>
+        <div class="itBody">
+          <div class="itbLeft">
+            <ul class="itblTop">
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221042275274.jpg" alt="农夫山泉" border="0">
+                </a>
+              </li> 
+              <li> 
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221040322598.jpg" alt="百事" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221038391096.jpg" alt="可口可乐" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221036549178.jpg" alt="德芙" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221035341549.gif" alt="瑞士莲" border="0">
+                </a>
+              </li> 
+              <li> 
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221018146247.gif" alt="好时" border="0">
+                </a>
+              </li> 
+              <li> 
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221015047090.jpg" alt="金帝" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202211200113292.jpg" alt="天喔" border="0">
+                </a> 
+              </li> 
+            </ul>
+            <ul class="itblBot">
+              <li><a href="#">坚果</a></li>
+              <li><a href="#">蜜饯</a></li>
+              <li><a href="#">肉干</a></li>
+              <li><a href="#">巧克力</a></li>
+              <li><a href="#">糖果</a></li>
+              <li><a href="#">口香糖</a></li>
+              <li><a href="#">碳酸饮料</a></li>
+              <li><a href="#">茶饮料</a></li>
+              <li><a href="#">果汁</a></li>
+              <li><a href="#">白酒</a></li>
+              <li><a href="#">啤酒</a></li>
+              <li><a href="#">洋酒</a></li>
+            </ul>
+          </div>
+          <div class="itbMid">
+            <a target="_blank" title="1楼美食、饮料广告" href="/b2c/index.html">
+              <img src="http://static.v5.javamall.com.cn/attachment/adv/201512091708414759.jpg" style="height:100%" alt="1楼美食、饮料广告" border="0">                     </a>
+          </div>
+          <div class="itbRight">
+            <ul class="itbrHead">
+              <li id='1121' class='itbrh_y'>食品</li>
+              <li id='2341' class='itbrh_n'>饮料</li>
+            </ul>
+            <div class='itbrBody'>
+              <ul class="itbrbs itbrb_1121">
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">000</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+
+              </ul>
+
+              <ul class="itbrbs itbrb_2341" style='display:none;'>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">1111</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      
+
+      <div class="indType">
+        <div class="itHead">食品饮料</div>
+        <div class="itBody">
+          <div class="itbLeft">
+            <ul class="itblTop">
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221042275274.jpg" alt="农夫山泉" border="0">
+                </a>
+              </li> 
+              <li> 
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221040322598.jpg" alt="百事" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221038391096.jpg" alt="可口可乐" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221036549178.jpg" alt="德芙" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221035341549.gif" alt="瑞士莲" border="0">
+                </a>
+              </li> 
+              <li> 
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221018146247.gif" alt="好时" border="0">
+                </a>
+              </li> 
+              <li> 
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221015047090.jpg" alt="金帝" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202211200113292.jpg" alt="天喔" border="0">
+                </a> 
+              </li> 
+            </ul>
+            <ul class="itblBot">
+              <li><a href="#">坚果</a></li>
+              <li><a href="#">蜜饯</a></li>
+              <li><a href="#">肉干</a></li>
+              <li><a href="#">巧克力</a></li>
+              <li><a href="#">糖果</a></li>
+              <li><a href="#">口香糖</a></li>
+              <li><a href="#">碳酸饮料</a></li>
+              <li><a href="#">茶饮料</a></li>
+              <li><a href="#">果汁</a></li>
+              <li><a href="#">白酒</a></li>
+              <li><a href="#">啤酒</a></li>
+              <li><a href="#">洋酒</a></li>
+            </ul>
+          </div>
+          <div class="itbMid">
+            <a target="_blank" title="1楼美食、饮料广告" href="/b2c/index.html">
+              <img src="http://static.v5.javamall.com.cn/attachment/adv/201512091708414759.jpg" style="height:100%" alt="1楼美食、饮料广告" border="0">                     </a>
+          </div>
+          <div class="itbRight">
+            <ul class="itbrHead">
+              <li id='1123' class='itbrh_y'>食品</li>
+              <li id='2343' class='itbrh_n'>饮料</li>
+            </ul>
+            <div class='itbrBody'>
+              <ul class="itbrbs itbrb_1123">
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">000</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+
+              </ul>
+
+              <ul class="itbrbs itbrb_2343" style='display:none;'>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">1111</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      
+      <div class="indType">
+        <div class="itHead">食品饮料</div>
+        <div class="itBody">
+          <div class="itbLeft">
+            <ul class="itblTop">
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221042275274.jpg" alt="农夫山泉" border="0">
+                </a>
+              </li> 
+              <li> 
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221040322598.jpg" alt="百事" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221038391096.jpg" alt="可口可乐" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221036549178.jpg" alt="德芙" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221035341549.gif" alt="瑞士莲" border="0">
+                </a>
+              </li> 
+              <li> 
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221018146247.gif" alt="好时" border="0">
+                </a>
+              </li> 
+              <li> 
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202221015047090.jpg" alt="金帝" border="0">
+                </a> 
+              </li> 
+              <li>
+                <a href="#">
+                  <img src="http://static.v4.javamall.com.cn/attachment/brand/201202211200113292.jpg" alt="天喔" border="0">
+                </a> 
+              </li> 
+            </ul>
+            <ul class="itblBot">
+              <li><a href="#">坚果</a></li>
+              <li><a href="#">蜜饯</a></li>
+              <li><a href="#">肉干</a></li>
+              <li><a href="#">巧克力</a></li>
+              <li><a href="#">糖果</a></li>
+              <li><a href="#">口香糖</a></li>
+              <li><a href="#">碳酸饮料</a></li>
+              <li><a href="#">茶饮料</a></li>
+              <li><a href="#">果汁</a></li>
+              <li><a href="#">白酒</a></li>
+              <li><a href="#">啤酒</a></li>
+              <li><a href="#">洋酒</a></li>
+            </ul>
+          </div>
+          <div class="itbMid">
+            <a target="_blank" title="1楼美食、饮料广告" href="/b2c/index.html">
+              <img src="http://static.v5.javamall.com.cn/attachment/adv/201512091708414759.jpg" style="height:100%" alt="1楼美食、饮料广告" border="0">                     </a>
+          </div>
+          <div class="itbRight">
+            <ul class="itbrHead">
+              <li id='1122' class='itbrh_y'>食品</li>
+              <li id='2342' class='itbrh_n'>饮料</li>
+            </ul>
+            <div class='itbrBody'>
+              <ul class="itbrbs itbrb_1122">
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">000</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+
+              </ul>
+
+              <ul class="itbrbs itbrb_2342" style='display:none;'>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">1111</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+                <li>
+                  <div class='itbrb_Pic'>
+                    <a href="#">
+                      <img src="http://static.v4.javamall.com.cn/attachment/goods/201202221943253396_thumbnail.jpg" style="width:100%;" alt="法国进口洋酒 【Couronnier】富豪白兰地700ml" class="scrollLoading">
+                    </a>
+                  </div>
+                  <div class='itbrb_name str'>
+                    <a target="_blank" href="#" title="法国进口洋酒 【Couronnier】富豪白兰地700ml">法国进口洋酒 【Couronnier】富豪白兰地700ml</a>
+                  </div>
+                  <div class='itbrb_price'><span>￥259.00</span></div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+      
+     
+    </div>
+  </div>
+
+
+
+  <!-- 公共底部 -->
+  <div id='pFoot'>
+    <div class="bodyMids">
+      <div class="pfBody">
+        <div class="pfbTexts">
+         
+          <div class="pfbtLi">
+            <div class="pfbtPic pfbbac1"></div>
+            <ul class="pfbtLink">
+              <li>新手上路</li>
+              <li><a href="#">顾客必读</a></li>
+              <li><a href="#">会员等级折扣</a></li>
+              <li><a href="#">积分规则</a></li>
+              <li><a href="#">购物流程</a></li>
+              <li><a href="#">常见问题</a></li>
+            </ul>
+          </div>
+
+          <div class="pfbtLi">
+            <div class="pfbtPic pfbbac1"></div>
+            <ul class="pfbtLink">
+              <li>关于网站</li>
+              <li><a href="#">关于我们</a></li>
+              <li><a href="#">联系我们</a></li>
+              <li><a href="#">业务合作</a></li>
+            </ul>
+          </div>
+
+          <div class="pfbtLi">
+            <div class="pfbtPic pfbbac1"></div>
+            <ul class="pfbtLink">
+              <li>购物指南</li>
+              <li><a href="#">游客购物通道</a></li>
+              <li><a href="#">网站使用条款</a></li>
+              <li><a href="#">购物流程</a></li>
+            </ul>
+          </div>
+
+          <div class="pfbtLi">
+            <div class="pfbtPic pfbbac1"></div>
+            <ul class="pfbtLink">
+              <li>物流和配送</li>
+              <li><a href="#">配送范围</a></li>
+              <li><a href="#">配送方式</a></li>
+              <li><a href="#">关于收货和验货</a></li>
+            </ul>
+          </div>
+
+          <div class="pfbtLi">
+            <div class="pfbtPic pfbbac1"></div>
+            <ul class="pfbtLink">
+              <li>支付方式</li>
+              <li><a href="#">支付方式</a></li>
+              <li><a href="#">付款常见问题</a></li>
+              <li><a href="#">索取发票</a></li>
+            </ul>
+          </div>
+
+          <div class="pfbtLi">
+            <div class="pfbtPic pfbbac1"></div>
+            <ul class="pfbtLink">
+              <li>服务</li>
+              <li><a href="#">售后服务</a></li>
+              <li><a href="#">免责条款</a></li>
+              <li><a href="#">商品退换货保障</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="pfbEWM">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/swiper-4.3.3.min.js"></script>
+  <script src="js/public.js"></script>
+  <script src="js/index.js"></script>
+
+  
+</body>
+</html>

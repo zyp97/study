@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>props传递数据</title>
+</head>
+<body>
+<div id="app">
+    <my-component message="来自父组件的数据"></my-component>
+    <my-component message1="来自父组件的数据1"></my-component>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    Vue.component('my-component',{
+        props:['message','message1'],
+        template:'<div>{{message}}{{message1}}</div>'
+    });
+    var app=new Vue({
+        el:"#app"
+    })
+</script>
+</html>

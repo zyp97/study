@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本用法</title>
+</head>
+<body>
+<div id="app">
+    <textarea type="text"placeholder="输入"@input=""v-model="name"></textarea>
+    <p>你输入的内容:</p>
+    <p>{{name}}</p>
+
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            name:""
+        },
+        methods:{
+            hands:function (e) {
+                this.name=e.target.value;
+            }
+        }
+    })
+</script>
+</html>

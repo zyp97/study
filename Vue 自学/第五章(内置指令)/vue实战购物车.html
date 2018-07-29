@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <style>
+
+       [v-cloak]{
+           display: none;
+       }
+        table{
+            border:1px solid #e9e9e9;
+            border-collapse: collapse;
+            border-spacing: 0;
+            empty-cells: show;
+            margin: 0 auto;
+        }
+        th,td{
+            padding: 8px 16px;
+            border:1px solid #e9e9e9;
+            text-align: left;
+        }
+        th{
+            background: #f7f7f7;
+            color:#5c6b77;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+        .shop{
+            text-align: center;
+
+        }
+       .total{
+           font-size: 35px;
+           text-align: center;
+           color:red;
+           font-weight: bold;
+       }
+    </style>
+</head>
+<body>
+<div id="app"v-cloak>
+    <template v-if="list.length">
+        <table>
+            <thead>
+            <tr>
+                <th><input type="checkbox"@click="check"v-model="swapCheck"></th>
+                <th>商品名称</th>
+                <th>商品单价</th>
+                <th>购买数量</th>
+                <th>操作<th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr v-for="(item,index) in list">
+                <td><input type="checkbox"v-model="selectList" :id="item.id" :value="index"name="selectList"></td>
+                <td>{{index+1}}</td>
+                <td>{{item.name}}</td>
+                <td id="a">{{item.price}}</td>
+                <td>
+                    <button @click="rands(index)" :disabled="item.count===0">-</button>
+                    {{item.count}}
+                    <button @click="hands(index)" :disabled="item.count===9">+</button>
+                </td>
+                <td>
+                    <button @click="bands(index)">移除</button>
+                </td>
+                <td></td>
+            </tr>
+            </tbody>
+        </table>
+        <div class="total">总价:￥<b id="b">{{totalPrice}}</b></div>
+    </template>
+    <div v-else class="shop">购物车为空</div>
+</div>
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    var app=new Vue({
+        el:"#app",
+        data:{
+            list:[
+                {
+                    id:'d',
+                    name:'iPhone 7',
+                    price:2000,
+                    count:1
+                },
+                {
+                    id:'c',
+                    name:'iPor Pro',
+                    price:5000,
+                    count:1
+                },
+                {
+                    id:'w',
+                    name:'MacBook Pro',
+                    price:5000,
+                    count:1
+                }
+            ],
+            list1:[
+                {
+                    id:4,
+                    name:'apple',
+                    price:2000,
+                    count:1
+                },
+                {
+                    id:5,
+                    name:'banner',
+                    price:5000,
+                    count:1
+                },
+                {
+                    id:6,
+                    name:'bag',
+                    price:5000,
+                    count:1
+                }
+            ]
+
+
+        },
+        computed:{
+            totalPrice:function () {
+                var total=0;
+                for(var i=0;i<this.list.length;i++){
+                    var item=this.list[i];
+                    total+=item.price*item.count;
+                }
+
+                return total.toString().replace(/\B(?=(\d{3})+$)/g,',');
+            }
+        },
+        methods: {
+            hands: function (index) {
+                if (this.list[index].count === 9) return;
+                this.list[index].count++;
+
+            },
+            rands: function (index) {
+                if (this.list[index].count === 0) return;
+                this.list[index].count--;
+            },
+            bands: function (index) {
+                this.list.splice(index, 1);
+            },
+            check: function () {
+                var a = document.getElementsByTagName('input');
+                for (var i = 0; i < a.length; i++) {
+                    if (a[i].type == "checkbox") {
+                        a[i].checked = true;
+
+                    }
+                }
+
+
+            },
+            swapCheck:function () {
+                var selectList=document.getElementsByTagName('na');
+                var len=selectList.length;
+                if(this.checked){
+                    for(var i=0;i<len;i++){
+                        var item=selectList[i];
+                        item.checked=true;
+                    }
+                    this.checked=false;
+                    this.selectList=[];
+                }
+                else {
+                    for(i=0;i<len;i++){
+                        item=selectList[i];
+                        if(item.checked===false){
+                            item.checked=true;
+                            this.selectList.push(selectList[i].value);
+                        }
+                    }
+                    this.checked=true;
+                }
+            }
+        }
+    })
+</script>
+</html>

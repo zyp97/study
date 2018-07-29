@@ -1,0 +1,109 @@
+.hyxx{
+	margin-top: 55px;
+	margin-left: 48px;
+	font-size: 29px;
+}
+.tx{
+	float: left;
+	text-align: center;
+	margin-left: 109px;
+	margin-top: 50px;
+}
+.txp{
+	float: left;
+	width: 600px;
+	height: 180px;
+	font-size: 14px;
+	color: #707070;
+	line-height: 30px;
+	margin-left: 90px;
+	margin-top: 60px;
+}
+.xx{
+	color: red;
+}
+.zero{
+	width: 800px;
+	margin-left: 128px;
+	margin-bottom: 17px;
+	line-height: 35px;
+}
+.one{
+	font-size: 13px;
+	color: #575757;
+	float: left;
+	width: 118px;
+	text-align: right;
+}
+.two{
+	width: 600px;
+	height: 50px;
+	float: left;
+}
+.allul{
+	float: left;
+	width: 804px;
+}
+#name{
+	width: 155px;
+	height: 30px;
+	border: 1px solid #dfdfdf;
+}
+#time{
+	width: 204px;
+	height: 31px;
+	border: 1px solid #dfdfdf;
+}
+#address{
+	width: 260px;
+	height: 29px;
+	border: 1px solid #dfdfdf;
+}
+#telephone{
+	width: 260px;
+	height: 29px;
+	border: 1px solid #dfdfdf;
+}
+#email{
+	width: 260px;
+	height: 29px;
+	border: 1px solid #dfdfdf;
+}
+.xl{
+	width: 260px;
+	height: 29px;
+}
+#vb{
+	width: 182px;
+	height: 40px;
+	border: none;
+	color: white;
+	background: #ff6702;
+	margin-left: 239px;
+	margin-top: 23px;
+	margin-right: 20px;
+}
+.tj{
+	font-size: 13px;
+	color: #ff9781;
+}
+.btx{
+	color: #ff9781;
+	display: none;
+}
+.btx2{
+	color: #ff9781;
+	display: none;
+}
+.btx3{
+	color: #ff9781;
+	display: none;
+}
+.btx4{
+	color: #ff9781;
+	display: none;
+}
+.btx5{
+	color: #ff9781;
+	display: none;
+}

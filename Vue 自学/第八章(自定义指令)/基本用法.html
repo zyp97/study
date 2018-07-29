@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基本用法</title>
+</head>
+<body>
+<div id="app">
+    <input type="text"v-focus>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    Vue.directive('focus',{
+        inserted:function (el) {
+            el.focus();
+        }
+    });
+    new Vue({
+        el:"#app"
+    })
+</script>
+</html>

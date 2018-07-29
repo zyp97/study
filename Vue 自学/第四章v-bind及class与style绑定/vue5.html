@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v-bind及class与style绑定</title>
+    <style>
+
+    </style>
+</head>
+<body>
+<div id="app">
+    <div :class="{'active':a,'btn':s}">1</div>
+</div>
+<script src="../第三章计算机属性/js/vue.js"></script>
+<script>
+    //绑定class的方式
+    new Vue({
+        el:"#app",
+        data:{
+            a:true,
+            s:true
+        }
+    })
+</script>
+</body>
+</html>

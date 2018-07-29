@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件的高级用法（递归组件）</title>
+</head>
+<body>
+<div id="app">
+    <my :count="1">
+
+    </my>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    Vue.component('my',{
+        name:'my',
+        props:{
+            count:{
+                type:Number,
+                default:1
+            }
+        },
+        template:'<div class="child"><my :count="count+1" v-if="count<3">"></my></div>'
+    });
+    new Vue({
+        el:"#app"
+    })
+</script>
+</html>

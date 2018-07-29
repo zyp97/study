@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>参数特性</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <child content="hello world"></child>
+</div>
+<script>
+    Vue.component('child',{
+        props:{
+          content:{
+              type:String,
+              required:true
+          }
+        },
+        template:'<div>{{content}}</div>'
+    });
+    var vm = new Vue({
+        el:"#app",
+        data:{
+
+        }
+    })
+</script>
+</body>
+</html>

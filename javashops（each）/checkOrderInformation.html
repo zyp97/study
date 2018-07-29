@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>核对订单信息</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/checkOrderInformation.css">
+</head>
+<body>
+<!-- 公共頂部 -->
+<div id='pHead'>
+    <div id='headerLine'>
+        <div class="headerMid">
+
+            <div class="headLeft">
+                <div class='hlwelcome'><a href="#">您好，欢迎来来到本站！</a></div>
+                <ul class="hlLogin">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+
+            <ul class="headRight">
+                <li><a href="#">站内消息（0）</a></li>
+                <li><a href="#">购物车（1）件</a></li>
+                <li><a href="#">帮助中心</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!--logo图-->
+    <div id="header">
+        <div class="headerMid">
+            <div class="headMain">
+                <div id="logo">
+                    <a href="#"><img src="images/public/logo.gif" height='76'/></a>
+                </div>
+                <!--数据-->
+                <div class="flow-steps">
+                    <ol class="cur1">
+                        <li class="num1">
+                            <span>我的购物车</span>
+                            <em>1</em>
+                        </li>
+                        <li class="num2">
+                            <span>核对订单信息</span>
+                            <em>2</em>
+                        </li>
+                        <li class="num3">
+                            <span>成功提交订单</span>
+                            <em>3</em>
+                        </li>
+                        <li class="clear"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 主要内容写在这里 -->
+<div class="checkout_box my_checkout_box">
+    <div class="my_checkout">
+        <div id="checkout_wrapper">
+            <div class="pay_frame">
+                <form class="validate" id="checkoutform">
+                    <!--收货人信息-->
+                    <div class="box address">
+                        <h3>收货人信息 <a href="javascript:void(0);" class="c-new-address" style="float: right; color: #337ab7; font-size: 12px;" id="newDizhi1">新建收货地址</a></h3>
+                        <!--判断会员地址数量-->
+                        <div class="center-ckt-info" style="height:108px;" id="vipNumber">
+                            <ul id="address_list">
+                                <li class="li-ckt-info selected" address_id="1">
+                                    <div class="ckt-checkbox info selected"> <!--w: 150px-->
+                                        <span title="123321">123321</span>
+                                    </div>
+                                    <div class="name-li-ckt-info" title="123321">123321</div>
+                                    <div class="address-li-ckt-info" title="北京 海淀区 三环以内  123" data-title="北京 海淀区 三环以内  123">北京 海淀区 三环以内  123</div>  <!--40个字符长度-->
+                                    <div class="mobile-li-ckt-info" title="15555555555">15555555555</div>
+                                    <div class="default-li-ckt-info">默认地址</div>
+                                    <div class="operate-li-ckt-info">
+
+                                        <a href="javascript: void(0);" class="edit" address_id="1">编辑</a>
+
+                                    </div>
+                                </li>
+                                <li class="li-ckt-info" address_id="2">
+                                    <div class="ckt-checkbox info"> <!--w: 150px-->
+                                        <span title="123">123</span>
+                                    </div>
+                                    <div class="name-li-ckt-info" title="123">123</div>
+                                    <div class="address-li-ckt-info" title="北京 海淀区 三环以内  123" data-title="北京 海淀区 三环以内  123">北京 海淀区 三环以内  123</div>  <!--40个字符长度-->
+                                    <div class="mobile-li-ckt-info" title="15555555555">15555555555</div>
+                                    <div class="operate-li-ckt-info">
+                                        <a href="javascript: void(0);" class="set" address_id="2">设置为默认</a>
+                                        <a href="javascript: void(0);" class="edit" address_id="2">编辑</a>
+                                        <a href="javascript: void(0);" class="delete" address_id="2">删除</a>
+                                    </div>
+                                </li>
+                                <li class="li-ckt-info" address_id="3">
+                                    <div class="ckt-checkbox info">
+                                        <span>123321</span>
+                                    </div>
+                                    <div class="name-li-ckt-info">123321</div>
+                                    <div class="address-li-ckt-info">北京 海淀区 三环以内  123</div>  <!--40个字符长度-->
+                                    <div class="mobile-li-ckt-info">15555555555</div>
+                                    <div class="operate-li-ckt-info">
+                                        <a href="javascript: void(0);" class="set" address_id="3">设置为默认</a>
+                                        <a href="javascript: void(0);" class="edit" address_id="3">编辑</a>
+                                        <a href="javascript: void(0);" class="delete" address_id="3">删除</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="collapse-ckt-info show more">
+                            <span class="more-collapse-ckt" id="cutOut" name="0">收起地址</span>
+                        </div>
+                    </div>
+                    <!--付款方式-->
+                    <div class="box payment">
+                        <h3>付款方式<a href="javascript:;" class="amend">[修改]</a></h3>
+                        <div class="box_d1">
+                            <span class="boxd1_s1">您选择的支付方式：<i>在线支付</i></span>
+                        </div>
+                        <div class="box_d2" style="display: none;">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <input type="radio"style="cursor: pointer;" name="payment" value="0" checked="checked">
+                                            <p>在线支付</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="payment" value="1"style="cursor: pointer;">
+                                            <p>货到付款</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="payment" value="2" style="cursor: pointer;">
+                                            <p>银行汇款</p>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <input type="button" class="yellow_btn" value="确认付款方式">
+                            </div>
+                        </div>
+                    </div>
+                    <!--送货时间-->
+                    <div class="box send_pucker">
+                        <h3>送货时间<a href="javascript:;" class="amend">[修改]</a></h3>
+                        <div class="box_d1">
+                            <span class="boxd1_s1">您选择的配送时间：<i>任意日期</i></span>
+                        </div>
+                        <div class="box_d2" style="display: none;">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <input type="radio"style="cursor: pointer;"name="send_pucker" checked="checked">
+                                            <p>任意日期</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio"name="send_pucker"style="cursor: pointer;">
+                                            <p>仅工作日</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio"name="send_pucker"style="cursor: pointer;">
+                                            <p>仅休息日</p>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <input type="button" class="yellow_btn"  value="保存送货时间">
+                            </div>
+                        </div>
+                    </div>
+                    <!--配送方式-->
+                    <div class="box dlytype">
+                        <h3>配送方式<a href="javascript:;" class="amend">[修改]</a></h3>
+                        <div class="box_d1">
+                            <span class="boxd1_s1">您选择的配送方式：<i>圆通速递</i></span>
+                        </div>
+                        <div class="box_d2" style="display: none;">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <label>
+                                            <input type="radio"name="dlytype" style="cursor: pointer;" checked="checked">
+                                            <p>圆通速递</p><span><span class="color_text1">￥10.00</span> 测试用，请在后台修改</span>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio"name="dlytype"style="cursor: pointer;">
+                                            <p>宅急送</p><span><span class="color_text1">￥15.00</span> 测试用，请在后台修改.</span>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <input type="button" class="yellow_btn" value="确认配送方式">
+                            </div>
+                        </div>
+                    </div>
+                    <!--发票信息-->
+                    <div class="box bill">
+                        <h3>发票信息<a href="javascript:;" class="amend">[修改]</a></h3>
+                        <div class="box_d1">
+                            <span class="boxd1_s1">您选择的发票信息：<i>无需发票</i>
+                                <a href="javascript:void(0);" class="color_text1" id="color_text1" style="display: none;">取消发票</a></span>
+                        </div>
+                        <div class="box_d2" style="display: none;">
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <span>发票抬头：</span>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="bill1"style="cursor: pointer;">
+                                            <p>个人</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="bill1"style="cursor: pointer;">
+                                            <p>企业</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0)" style="color:blue;" id="new1">新增单位发票</a>
+                                        <div class="bill_dText">
+                                            <input type="text"id="input1" maxlength="30" placeholder="新增单位发票抬头">
+                                                <a href="javascript:;">保存</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <ul class="bill_ul2" id="bill_ul2">
+                                    <li>纳税人识别编号：</li>
+                                    <li>
+                                            <input id="input2" maxlength="20" type="text" class="duty-invoice-input" placeholder="纳税人识别号">
+                                            <span style="color:#ff3500;">必填</span>
+                                    </li>
+                                </ul>
+                                <ul>
+                                    <li>
+                                        <span>发票内容：</span>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="bill2"style="cursor: pointer;">
+                                            <p>明细</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="bill2"style="cursor: pointer;">
+                                            <p>办公用品</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="bill2"style="cursor: pointer;">
+                                            <p>劳保用品</p>
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <label>
+                                            <input type="radio" name="bill2"style="cursor: pointer;">
+                                            <p>耗材</p>
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <input type="button" class="yellow_btn"  value="保存发票信息" name="保存发票信息">
+                            </div>
+                        </div>
+                    </div>
+                    <!--商品清单-->
+                    <div class="inventory goods_wrapper">
+                        <h3>商品清单<a href="#">[返回购物车修改]</a></h3>
+                        <table cellspacing="0" cellpadding="3" width="100%">
+                            <thead>
+                            <tr>
+                                <th style="width:100px;">图片</th>
+                                <th style="width:600px;">商品名称</th>
+                                <!-- <th>商品积分</th> -->
+                                <th>销售价格</th>
+                                <th>优惠价格</th>
+                                <th>数量</th>
+                                <th>小计</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr itemid="11" style="width:100px;">
+                                <td>
+                                    <a target="_blank" href="#">
+									<span class="cart-product-img">
+<img src="./img/201511240115430875_thumbnail.jpg" height="50" style="cursor: pointer;">									</span>
+                                    </a>
+                                </td>
+                                <td style="text-align: left;width:600px;">
+                                    <p>
+                                        <a target="_blank" href="#">【沃隆_每日坚果25g*30袋】精美礼盒原味混合干果综合坚果仁箱装</a>
+                                    </p>
+                                </td>
+                                <td class=" mktprice1">￥199.00</td>
+                                <td>￥199.00</td>
+                                <td>
+                                    1
+                                </td>
+                                <td class="itemTotal">￥199.00</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!--商品备注-->
+                    <div class="total_box">
+                        <!-- 备注 -->
+                        <div class="remark" id="remark">
+                            <span class="remark_title remark_title_minus show1" name="0">订单备注：</span>
+                            <i class="remark_show" name="remark" value="" style="display: block;"></i>
+                            <div class="remark_word remark_d1" style="display: none;">
+                                <input type="text"class="remark_intro" placeholder="请写下您的特殊要求，超过30个字我记不住了哦^-^" maxlength="30">
+                                <input type="button" class="save_remark" value="保存备注">
+                            </div>
+                        </div>
+                        <i name="xxx" value="1111">
+                            <div class="checkout-bonus-box">
+                                <span class="checkout-bonus-use checkout-bonus-minus" rel="show">使用优惠券</span>
+                                <div class="checkout-bonus-list" style="display: block;">
+                                </div>
+                            </div>
+                            <!-- 使用余额支付 -->
+                            <!-- 价格 -->
+                            <div class="total">
+                                <ul>
+                                    <li>
+                                        <p>￥199.00</p>
+                                        <h2>商品价格总计：</h2>
+                                    </li>
+
+                                    <li>
+                                        <p>￥10.00</p>
+                                        <h2>运费总计：</h2>
+                                    </li>
+                                    <li>
+                                        <p>￥209.00</p>
+                                        <h2>订单总价：</h2>
+                                    </li>
+                                    <li>
+                                        <h4>￥209.00</h4>
+                                        <h3 style="float:right;font-size:16px;width:80px;">应付金额：</h3>
+                                        <input type="hidden" name="needPay" value="209">
+                                    </li>
+                                </ul>
+                            </div>
+                        </i></div>
+                    <!--确认结算-->
+                    <i name="xxx" value="1111">
+                        <div class="order_total btn-div">
+                            <input type="button" id="createBtn" class="enable green-btn" value="确认结算">
+                        </div>
+                    </i>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--提交订单时显示-->
+    <div id="form_show" style="display: none; z-index: 1011; position: fixed; padding: 0px; margin: 0px; width: 30%; top: 10px; left: 35%; text-align: center; color: rgb(0, 0, 0); border: 3px solid rgb(170, 170, 170); background-color: rgb(255, 255, 255); cursor: wait;">正在提交您的订单，请稍候...</div>
+</div>
+<!-- 新增地址隐藏显示内容 -->
+<div class="checkout-address-append" id="checkout-address-append"  style="display:none">
+    <div class="fixed_d1">
+        <div class="fixedd1_d1">新增收货人信息 <img id="checkout-address-appendd1" src="img/close.gif"/></div>
+        <div class="fixedd1_bottom" id="newReceiver">
+            <ul>
+                <li>
+                    <span class="text_posit"><span>*</span>收货人:</span>
+                    <input class="border_color1 input_length1" type="text"/>
+                </li>
+                <li style="position: relative;">
+                    <span class="text_posit"><span>*</span>收货地区:</span>
+                    <div style="display: inline-block;" key="1">
+                        <input readonly type="text" class="border_color1 input_length2" id="regionalSelection" placeholder="-- 请选择 --"/>
+                        <img src="img/xia.gif" class="img_posit1">
+                    </div>
+                    <div id="receivingArea" class="receivingArea">
+                        <div style="position: absolute;width: 100px;height: 1px;background-color:#fff;top:-1px;left: 84px;"></div>
+                        <div>
+                            <div style="width: 70px;height: 27px;line-height: 27px; border: 2px solid #edd38b;text-align: center;border-bottom: #fff;position: relative;top:2px;">请选择 <img style="margin-left: 5px;" src="img/xia1.gif"/></div>
+                            <div style="border-top: 2px solid #edd38b;">
+                                <div style="height: 2px;background-color: #fff;position: relative;top:-2px;width: 72px;"></div>
+                                <div style="margin: 10px 20px 50px 10px;" id="cilckArea">
+                                    <a href="javascript:void(0);">北京</a>
+                                    <a href="javascript:void(0);">上海</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <span class="text_posit"><span>*</span>详细地址:</span>
+                    <input type="text" class="border_color1 input_length3"/>
+                </li>
+                <li>
+                    <span class="text_posit"><span>*</span>手机号:</span>
+                    <input type="text" class="border_color1 input_length4" maxlength="11"/>
+                </li>
+                <li>
+                    <span class="text_posit"><span></span>地址别名:</span>
+                    <input type="text" class="border_color1 input_length5"/>
+                    <i id="addressAlias">建议填写常用名称 例如：<a href="javascript:void(0);">家里</a> <a href="javascript:void(0);">公司</a> <a href="javascript:void(0);">学校</a></i>
+                </li>
+                <li>
+                    <span class="text_posit"></span>
+                    <label>
+                        <input type="checkbox" id="checkbox1"> 使用新地址作为默认收货地址
+                    </label>
+                </li>
+                <li>
+                    <span class="text_posit"></span>
+                    <input class="input_length7" type="button" value="保存地址" id="preserveAddress"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--结束-->
+
+
+<!-- 公共底部 -->
+<div id='pFoot'>
+    <div class="bodyMids">
+        <div class="pfBody">
+            <div class="pfbTexts">
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>新手上路</li>
+                        <li><a href="#">顾客必读</a></li>
+                        <li><a href="#">会员等级折扣</a></li>
+                        <li><a href="#">积分规则</a></li>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>关于网站</li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">业务合作</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>购物指南</li>
+                        <li><a href="#">游客购物通道</a></li>
+                        <li><a href="#">网站使用条款</a></li>
+                        <li><a href="#">购物流程</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>物流和配送</li>
+                        <li><a href="#">配送范围</a></li>
+                        <li><a href="#">配送方式</a></li>
+                        <li><a href="#">关于收货和验货</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>支付方式</li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">付款常见问题</a></li>
+                        <li><a href="#">索取发票</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>服务</li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">免责条款</a></li>
+                        <li><a href="#">商品退换货保障</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pfbEWM">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+
+    })
+</script>
+<script src="js/checkOrderInformation.js"></script>
+<script type="text/javascript"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+$(document).ready(function(){
+	$(".kais").mouseover(function(){
+		$(".isas").css("color","#737373");
+		$("#imgs").attr("src","../images/vip/jia2.gif");
+	});
+	$(".kais").mouseout(function(){
+		$(".isas").css("color","#e3e3e3");
+		$("#imgs").attr("src","../images/vip/jia.gif");
+	});
+});

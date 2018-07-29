@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表组件</title>
+</head>
+<body>
+<my-list :books="books">
+    <template slot="book" scope="props">
+        <li>{{props.bookName}}</li>
+    </template>
+</my-list>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    Vue.component('my-list',{
+        props:{
+            books:{
+                type:Array,
+                default:function () {
+                    return [];
+                }
+            }
+        },
+        template:'<ul>' +
+        '<slot name="book" v-for="book in books" :book-name="book.name"></slot>' +
+        '</ul>'
+    });
+    new Vue({
+        el:"#app",
+        data:{
+            books:[
+                {name:'vue实战'},
+                {name:'java'},
+                {name:'javascript'}
+            ]
+        }
+    })
+</script>
+</html>

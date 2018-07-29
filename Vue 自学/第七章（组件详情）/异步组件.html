@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>异步组件</title>
+</head>
+<body>
+<div id="app">
+    <my></my>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    Vue.component('my',function (resolve,reject) {
+        window.setTimeout(function () {
+            resolve({
+                template:'<div>我是异步渲染的</div>'
+            })
+        },2000)
+    });
+    new Vue({
+        el:"#app"
+    })
+</script>
+</html>

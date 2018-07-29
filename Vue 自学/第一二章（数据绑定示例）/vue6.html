@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>实列</title>
+</head>
+<body>
+<div id="app">
+    <div @click="handeClick">
+   {{message}}
+        <item></item>
+    </div>
+</div>
+<script src="js/vue.min.js"></script>
+</body>
+<script>
+    Vue.component('item',{
+        template:'<div>hello item</div>'
+    })
+ var vm= new Vue({
+      el:"#app",
+      data:{
+          message:'hello world'
+      },
+     methods:{
+          handeClick:function () {
+              alert('hello');
+          }
+     },
+  })
+</script>
+</html>

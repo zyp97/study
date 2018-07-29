@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>列表过度</title>
+    <script src="js/vue.js"></script>
+    <style>
+        .v-enter,.v-leave-to{
+            opacity: 0;
+        }
+        .v-enter-active,.v-leave-active{
+            transition: opacity 1s;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <transition-group>
+    <div v-for="(item,index) of list" :key="item.id">
+        {{item.title}}
+    </div>
+    </transition-group>
+    <button @click="handleBtnClick">add</button>
+
+</div>
+<script>
+    var count=0;
+    var vm =new Vue({
+        el:"#app",
+        data:{
+               list:[]
+        },
+        methods:{
+            handleBtnClick:function () {
+                this.list.push({
+                    id:count++,
+                    title:'HelloWorld'
+                })
+            }
+        }
+    })
+</script>
+</body>
+</html>

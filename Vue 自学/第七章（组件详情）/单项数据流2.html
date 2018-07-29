@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my :width="100"></my>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    Vue.component('my',{
+        props:['width'],
+        template:'<div :style="styles">组件内容</div>',
+        computed:{
+            styles:function () {
+                return {
+                    width:this.width+'px'
+                }
+            }
+        }
+    });
+    new Vue({
+        el:"#app"
+    })
+</script>
+</html>

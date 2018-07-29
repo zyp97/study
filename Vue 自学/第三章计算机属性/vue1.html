@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>属性的用法</title>
+</head>
+<body>
+<div id="app">
+    总价:{{prices}}
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            package1:[
+                {
+                  name:"iPhone7",
+                  price:7199,
+                  count:2
+                },
+                {
+                    name:"iPad",
+                    price:2888,
+                    count:2
+                }
+            ],
+            package2:[
+                {
+                    name:"apple",
+                    price:3,
+                    count:5
+                },
+                {
+                    name:'banner',
+                    price:2,
+                    count:10
+                }
+            ]
+        },
+        computed:{
+            prices:function () {
+                var prices=0;
+                for(var i=0;i<this.package1.length;i++){
+                    prices+=this.package1[i].price*this.package1[i].count;
+                }
+                for(var i=0;i<this.package2.length;i++){
+                    prices+=this.package2[i].price*this.package2[i].count;
+                }
+                return  prices
+            }
+        }
+    })
+</script>
+</html>

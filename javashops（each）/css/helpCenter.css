@@ -1,0 +1,177 @@
+/*公共样式 main*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, textarea, input {
+    margin: 0;
+    padding: 0;
+}
+
+address, cite, dfn, em, var, i {
+    font-style: normal;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Microsoft Yahei', 'simsun', 'arial', 'tahoma';
+    color: #222;
+    background: #fff;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+h1, h2, h3, h4, h5, h6, th {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+button, input, select, textarea {
+    font-size: 100%;
+}
+
+fieldset, img {
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+    background: none
+}
+
+ul, ol {
+    list-style: none;
+}
+
+:focus {
+    outline: none;
+}
+
+.clearfix {
+    clear: both;
+    content: "";
+    display: block;
+    overflow: hidden
+}
+
+.clear {
+    clear: both;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/*公共样式 end*/
+
+/*<!--Main 开始-->*/
+.help-main {
+    background: #f5f5f5;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.help-main .help_navigation {
+    height: 40px;
+    line-height: 40px;
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1180px;
+}
+
+/*.help-main .help_navigation a{  color:#337ab7;  }*/
+/*.help-main .help_navigation a:hover{ color:green;  }*/
+.help-main a {
+    color: #337ab7;
+}
+
+.help-main a:hover {
+    color: green;
+}
+
+.help_content {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 1180px;
+}
+
+/*左边*/
+.help-main .help_content .left {
+    background: #fff none repeat scroll 0 0;
+    float: left;
+    overflow: hidden;
+    padding-top: 20px;
+    width: 234px;
+    padding-bottom: 20px;
+}
+
+.help-main .help_content .left p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 52px;
+    margin: 0 48px 2px;
+    width: 138px;
+}
+
+.help-main .help_content .left a {
+    padding: 6px 48px;
+    display: block;
+    font-size: 14px;
+    color: #757575;
+}
+
+.help-main .help_content .left .selected {
+    color: #ff6700;
+}
+
+/*右边*/
+.help-main .help_content .right {
+    background: #fff;
+    display: inline;
+    float: left;
+    margin: 0 0 0 14px;
+    overflow: hidden;
+    padding: 36px 48px;
+    width: 836px;
+}
+
+.help-main .help_content .right li {
+    font-size: 14px;
+    color: #757575;
+    line-height: 30px;
+    list-style: none;
+}
+
+.help-main .help_content .right p {
+    font-size: 14px;
+    color: #757575;
+    line-height: 30px;
+}
+
+.help-main .help_content .right .text_Indent2 {
+    text-indent: 2em;
+}
+
+/*联系我们*/
+.help-main .help_content .right table {
+    border-top: 1px solid #e7e7e7;
+    border-left: 1px solid #e7e7e7;
+}
+
+.help-main .help_content .right table tr th, .help-main .help_content .right table tr td {
+    padding: 10px 20px;
+    font-size: 14px;
+    border-bottom: 1px solid #e7e7e7;
+    border-right: 1px solid #e7e7e7;
+}
+.help-main .help_content .right ol{margin-top:20px;}
+.help-main .help_content .right ol li:nth-of-type(1){  font-weight: 700;  }
+/*<!--Main End-->*/

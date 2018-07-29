@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    {{message}}
+    <my></my>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    Vue.component('my',{
+        template:'<button @click="hands">通过父组件直接修改数据</button>',
+        methods:{
+            hands:function () {
+                this.$parent.message='来自父组件my的内容'
+            }
+        }
+    });
+ var app= new Vue({
+        el:"#app",
+        data:{
+            message:''
+        }
+    })
+</script>
+</html>

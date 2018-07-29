@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>过滤与排序</title>
+</head>
+<body>
+<div id="app">
+    <ul>
+        <template v-for="book in filterBooks">
+            <li>书名:{{book.name}}</li>
+            <li>作者:{{book.author}}</li>
+        </template>
+    </ul>
+</div>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            books:[
+                {
+                    name:"《vue实战》",
+                    author:"《张棚》"
+                },
+                {
+                    name:"《java实战》",
+                    author:"《张棚》"
+                }
+
+            ]
+        },
+        computed:{
+            filterBooks:function () {
+                return this.books.filter(function (book) {
+                    return book.name.match(/JavaScript/);
+                })
+            }
+        }
+    })
+</script>
+</html>

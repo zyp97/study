@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>组件用法</title>
+</head>
+<body>
+<h1>初识组件</h1>
+<div id="app">
+    <com></com>
+</div>
+<div id="app-one">
+    <com></com>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    Vue.component('com',{
+        template:'' +
+        '<div>' +
+        '{{name}}:大家好我来介绍一下我的女朋友@关晓彤' +
+        '<button @click="zp">改名字</button>' +
+        '</div>' +
+        '',
+        data:function () {
+            return{
+                name:'张朋'
+            }
+        },
+        methods:{
+            zp:function () {
+                this.name='鹿晗';
+            }
+        }
+    });
+    new Vue({
+        el:"#app"
+    });
+    new Vue({
+        el:"#app-one"
+    })
+</script>
+</html>

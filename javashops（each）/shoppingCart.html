@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" type="text/css" href="css/public.css">
+    <link rel="stylesheet" type="text/css" href="css/swiper-4.3.3.min.css">
+    <link rel="stylesheet" href="css/shoppingCart.css">
+</head>
+<body>
+<!-- 公共頂部 -->
+<div id='pHead'>
+    <div id='headerLine'>
+        <div class="headerMid">
+
+            <div class="headLeft">
+                <div class='hlwelcome'><a href="#">您好，欢迎来来到本站！</a></div>
+                <ul class="hlLogin">
+                    <li><a href="#">登录</a></li>
+                    <li><a href="#">注册</a></li>
+                </ul>
+            </div>
+
+            <ul class="headRight">
+                <li><a href="#">站内消息（0）</a></li>
+                <li><a href="#">购物车（1）件</a></li>
+                <li><a href="#">帮助中心</a></li>
+            </ul>
+
+        </div>
+    </div>
+    <!--logo图-->
+    <div id="header">
+        <div class="headerMid">
+            <div class="headMain">
+                <div id="logo">
+                    <a href="#"><img src="images/public/logo.gif" height='76'/></a>
+                </div>
+                <!--数据-->
+                <div class="flow-steps">
+                    <ol class="cur1">
+                        <li class="num1">
+                            <span>我的购物车</span>
+                            <em>1</em>
+                        </li>
+                        <li class="num2">
+                            <span>核对订单信息</span>
+                            <em>2</em>
+                        </li>
+                        <li class="num3">
+                            <span>成功提交订单</span>
+                            <em>3</em>
+                        </li>
+                        <li class="clear"></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 主要内容写在这里 -->
+<div style="height: 1px;background-color: #fff;clear:both;"></div>
+<!--购物车-->
+<div class="section1">
+    <div class="mycar-index">
+        <h1>购物车</h1>
+        <div style="width:1200px;height:1px;overflow:hidden;clear:both;"></div>
+        <div id="cart-wrapper">
+            <table cellspacing="0" cellpadding="3" width="100%">
+                <thead>
+                <tr>
+                    <th style="text-align: right; width: 55px;"><label><input type="checkbox" name="select_all" id="select_all"
+                                                                       style="margin-right: 5px;" value="1">全选</label>
+                    </th>
+                    <th style="width:650px;">商品信息</th>
+                    <!-- <th>商品积分</th> -->
+                    <th>销售价格</th>
+                    <th>优惠价格</th>
+                    <th>数量</th>
+                    <th style="width:100px;">小计</th>
+                    <th class="cart_last" style="width:100px;">删除</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr itemid="11" productid="339" price="199">
+                    <td style="width: 55px;">
+                        <!--<input type="checkbox" name="product_id"  value="339" style="margin-right: 15px;"-->
+                        <!--exchange="false">-->
+                        <input type="checkbox" name="product_id"  value="339" style="margin-right: 15px;" exchange="false">
+                    </td>
+                    <td style="width:650px;">
+                        <a target="_blank" href="http://localhost:8080/b2c/goods-262.html" class="cart_list_img">
+                            <img src="./img/201511240115430875_thumbnail.jpg" height="50" style="cursor: pointer;"
+                                 width="36"> </a>
+                        <p><a target="_blank" href="http://localhost:8080/b2c/goods-262.html">【沃隆_每日坚果25g*30袋】精美礼盒原味混合干果综合坚果仁箱装</a>
+                            <!-- 显示并可查看促销活动信息 -->
+                        </p>
+                    </td>
+                    <!-- <td style="font-weight:bold; font-size:14px;">0</td> -->
+                    <td class=" mktprice1" style="font-weight:bold; font-size:14px;">￥199.00</td>
+                    <td>￥<span>199.00</span></td>
+                    <td class="cart-quantity" style="text-align:center;">
+                        <div  class="Numinput" value="1" itemid="11" productid="339">
+                            <span class="numadjust decrease">-</span>
+                            <input size="5" name="num" autocomplete="off" type="text" readonly value="1">
+                            <span class="numadjust increase">+</span>
+                        </div>
+                    </td>
+                    <td class="itemTotal" style=" color:#ff6700;font-size: 14px;font-weight: bold;width:100px;">
+                        ￥<span>199.00</span>
+                    </td>
+                    <td class="cart_last" style="width:100px;"><a href="javascript:;" class="delete"
+                                                                  style=""></a></td>
+                </tr>
+                </tbody>
+            </table>
+            <!-- 总价 -->
+            <div class="cart-wrapper">
+                <div class="yes_bonded">
+                    <span class="c08" id="commodityPrice">
+                        商品总价
+                        <span class="color02">(不含运费及税费)</span>：
+                        <span class="color03">￥<span name="price">0</span></span>
+                    </span>
+                </div>
+                <div class="cart_tools">
+                    <div class="btn-div">
+                        <input type="button" class="clean_btn white-btn" value="清空购物车">
+                    </div>
+                    <div class="btn-div">
+                        <input type="button" class="returnbuy_btn yellow-btn" value="继续购物">
+                    </div>
+
+                    <div class="btn-div">
+                        <input type="button" class="checkout-btn green-btn" value="去结算">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--结束-->
+
+
+<!-- 公共底部 -->
+<div id='pFoot'>
+    <div class="bodyMids">
+        <div class="pfBody">
+            <div class="pfbTexts">
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>新手上路</li>
+                        <li><a href="#">顾客必读</a></li>
+                        <li><a href="#">会员等级折扣</a></li>
+                        <li><a href="#">积分规则</a></li>
+                        <li><a href="#">购物流程</a></li>
+                        <li><a href="#">常见问题</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>关于网站</li>
+                        <li><a href="#">关于我们</a></li>
+                        <li><a href="#">联系我们</a></li>
+                        <li><a href="#">业务合作</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>购物指南</li>
+                        <li><a href="#">游客购物通道</a></li>
+                        <li><a href="#">网站使用条款</a></li>
+                        <li><a href="#">购物流程</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>物流和配送</li>
+                        <li><a href="#">配送范围</a></li>
+                        <li><a href="#">配送方式</a></li>
+                        <li><a href="#">关于收货和验货</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>支付方式</li>
+                        <li><a href="#">支付方式</a></li>
+                        <li><a href="#">付款常见问题</a></li>
+                        <li><a href="#">索取发票</a></li>
+                    </ul>
+                </div>
+
+                <div class="pfbtLi">
+                    <div class="pfbtPic pfbbac1"></div>
+                    <ul class="pfbtLink">
+                        <li>服务</li>
+                        <li><a href="#">售后服务</a></li>
+                        <li><a href="#">免责条款</a></li>
+                        <li><a href="#">商品退换货保障</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pfbEWM">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/swiper-4.3.3.min.js"></script>
+<script src="js/public.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        autoplay: true,
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        }
+
+    })
+</script>
+<script src="js/shoppingCart.js"></script>
+<script type="text/javascript"></script>
+</body>
+</html>

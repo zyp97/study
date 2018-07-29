@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>生命周期</title>
+</head>
+<body>
+<div id="app">
+
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+ var vm = new Vue({
+          el:"#app",
+           template:"<div>hello world</div>",
+          beforeCreate:function () {
+          console.log("beforeCreate")
+     },
+          created:function () {
+          console.log('created')
+     },
+     beforeMount:function () {
+          console.log(this.$el);
+         console.log('beforeMount')
+     },
+     mounted:function () {
+              console.log(this.$el);
+         console.log('mounted')
+     },
+     beforeDestroy:function () {
+       console.log("beforeDestroy")
+     },
+     destroyed:function () {
+         console.log("destroyed")
+     },
+     beforeUpate:function () {
+        console.log("beforeUpate");
+     },
+     updated:function () {
+         console.log("updated");
+     },
+        data:{
+
+        }
+    })
+</script>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        li{
+            list-style-type: none;
+            float:left;
+        }
+        .main{
+            width:1000px;
+            height:300px;
+            margin: 0 auto;
+            overflow: hidden;
+            position: relative;
+            z-index: 0;
+        }
+        img{
+            width:1000px;
+            height:300px;
+            }
+   .lis{
+       width:20px;
+       height:20px;
+       text-align: center;
+       border:1px solid lightgrey;
+       margin-left: 20px;
+       border-radius: 50%;
+
+   }
+        .list{
+            width:200px;
+            height:40px;
+            color:white;
+            cursor: pointer;
+            margin-top: -50px;
+            margin-left: 600px;
+            position: relative;
+            z-index: 99;
+        }
+        .p_li{
+            background:red;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="img"><img src="img/huandeng1.jpg"></div>
+    <div class="img"><img src="img/huandeng2.jpg"></div>
+    <div class="img"><img src="img/huandeng3.jpg"></div>
+</div>
+<ul class="list">
+    <li class="lis p_li">1</li>
+    <li class="lis">2</li>
+    <li class="lis">3</li>
+
+</ul>
+<script src="js/jquery-1.12.4.js"></script>
+</body>
+<script>
+  $(function () {
+      $(".list li").each(function (i) {
+          $(this).click(function () {
+              $(".main div").hide().eq(i).fadeIn('slow');
+              $(".list li").removeClass('p_li').eq(i).addClass('p_li');
+          });
+      });
+      var num=0;
+      var banner=$(".main div").length;
+      var a;
+      function fn() {
+          num++;
+          if(num>banner){
+              num=1;
+          }
+          $(".main div").hide().eq(num-1).fadeIn();
+          a= setTimeout(fn,2000);
+          $(".list li").removeClass('p_li').eq(num-1).addClass('p_li');
+      }
+      fn();
+      $('img').mouseenter(function() {
+          clearTimeout(a);
+      }).mouseleave(function() {
+          fn();
+      });
+      $('.list').mouseenter(function() {
+          clearTimeout(a);
+      }).mouseleave(function() {
+          fn();
+      });
+  });
+</script>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>选择列表</title>
+</head>
+<body>
+<div id="app">
+    <select v-model="sel"multiple>
+        <option>html</option>
+        <option value="js">Javascript</option>
+        <option>css</option>
+    </select>
+    <p>你的选项是:{{sel}}</p>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            sel:['html','css']//加上multiplr多选
+        }
+    })
+    </script>
+</html>

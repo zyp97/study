@@ -1,0 +1,172 @@
+.telsdo{
+	background: #fff none repeat scroll 0 0;
+    border: 1px solid #d9d9d9;
+    box-shadow: 0 0 4px 1px #d9d9d9;
+    margin: 0 auto;
+    min-height: 550px;
+    padding: 0 10px 50px;
+    width: 920px;
+}
+.frema{
+	border-bottom: 1px solid #ededed;
+    height: 56px;
+    line-height: 56px;
+    padding: 0 38px 0 20px;
+    font-size: 20px;
+    position: relative;
+}
+.tbRight{
+	position: absolute;
+    display: block;
+    width: 150px;
+    color: #2475c0;
+    right: -90px;
+    top: -10px;
+    font-size: 12px;
+    font-weight: normal;
+    height: 15px;
+}
+.cente{
+	float: left;
+	width: 1px;
+	height: 303px;
+	margin-top: 122px;
+	background: #efefef;
+}
+.pig{
+    position: relative;
+	width: 920px;
+	float: left;
+}
+.leckl{
+	float: left;
+	width: 355px;
+	height: 544px;
+	text-align: center;
+	margin-top: 50px;
+}
+body{
+	background: #ffffff;
+}
+.bodyMain{
+	margin-top: 25px;
+}
+.texts{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    color: #646560;
+}
+.leckl li{
+	float: left;
+
+}
+.leckl ul{
+	margin-top: 43px;
+	margin-left: 75px;
+}
+.righttell{
+	float: left;
+	width: 448px;
+	margin-left: 55px;
+	margin-top: 20px;
+}
+.onemore{
+	float: left;
+	line-height: 46px;
+	width: 448px;
+	height: 46px;
+	position: relative;
+	margin: 7.5px;
+}
+.cllick{
+	font-size: 12px;
+	width: 183px;
+	border: 1px solid #dedede;
+    border-radius: 5px;
+	height: 44px;
+	padding-left: 77px;
+	padding-right: 186px;
+}
+.tbox{
+	float: left;
+	position: absolute;
+	left: 18px;
+	font-size: 13px;
+	color: #7c7773;
+}
+.btsx{
+	float: left;
+	position: absolute;
+	right: 100px;
+}
+.dul{
+	font-size: 12px;
+	line-height: 12px;
+	text-align: right;
+}
+.tongs{
+	margin-top: 5px;
+	float: left;
+}
+.btnseg{
+	float: left;
+}
+.btnseg button{
+	background: #44b540;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px #dbdbdb;
+    color: #fff;
+    display: inline-block;
+    font-size: 16px;
+    height: 34px;
+    line-height: 32px;
+    margin-top: 15px;
+    text-align: center;
+    width: 300px;
+    border: 0px none;
+    margin-left: 74px;
+    cursor: pointer;
+}
+.onemore img{
+	position: absolute;
+	top: 3px;
+	left: 346px;
+}
+.nameskl{
+	cursor: pointer;
+	border: none;
+	background: white;
+	color: #8ab389;
+	font-size: 12px;
+	width: 90px;
+	height: 15px;
+	position: absolute;
+	left: 330px;
+	top: 15px;
+}
+.btxs1{
+	display: none;
+}
+.btxs2{
+	display: none;
+}
+.btxs3{
+	display: none;
+}
+.btxs4{
+	display: none;
+}
+.ptxs1{
+	display: none;	
+}
+.ptxs2{
+	display: none;	
+}
+.ptxs3{
+	display: none;	
+}
+.ptxs4{
+	display: none;	
+}

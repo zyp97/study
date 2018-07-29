@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>插槽</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <child content="<p>hello</p>"></child>
+</div>
+<script>
+  Vue.component('child',{
+      props:['content'],
+      template:"<div v-html='this.content'><p>Hello</p>{{content}}</div>"
+  });
+    var vm = new Vue({
+        el:"#app",
+        data:{
+
+        }
+    })
+</script>
+</body>
+</html>

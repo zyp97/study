@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>绑定值</title>
+</head>
+<body>
+<div id="app">
+    <input type="radio"v-model="pick" :value="value">
+    <label>单选按钮</label>
+    <p>{{pick}}</p>
+    <p>{{value}}</p>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            pick:'false',
+            value:123
+        }
+    })
+</script>
+</html>

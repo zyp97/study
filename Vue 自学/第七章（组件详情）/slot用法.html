@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="app">
+    <my>
+        <p>分发的内容</p>
+        <p>更多分发的内容</p>
+    </my>
+</div>
+<script src="js/vue.js"></script>
+</body>
+<script>
+    Vue.component('my',{
+        template:'<div>' +
+        '<slot><p>如果父组件没有插入内容，我们将作为默认显示</p></slot>' +
+        '</div>'
+    });
+    var app=new Vue({
+        el:"#app"
+
+    })
+</script>
+</html>
